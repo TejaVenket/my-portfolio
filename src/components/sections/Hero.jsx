@@ -40,7 +40,6 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center p-10 md:px-16 overflow-hidden">
-      {/* grid background */}
       <div
         className="absolute inset-0 opacity-100 bg-bg"
       />
@@ -71,8 +70,8 @@ export default function Hero() {
 
 
           <p className="text-lg font-sans text-main leading-relaxed mb-10">
-            CS student at SUTD. I care about clean code, thoughtful design,
-            and shipping products people actually enjoy using.
+            Computer Science and Design student at SUTD. I care about building impactful 
+            and meaningful products that solve real problems.
           </p>
 
           <div className="flex gap-3 flex-wrap mb-12">
@@ -117,19 +116,19 @@ export default function Hero() {
 
                 {/* profile image */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative w-[430px] h-[800px] -translate-y-40">
+                    {/* <div className="relative w-[430px] h-[600px] -translate-y-40">
                         <Image
                         src="/images/profile.png"
                         alt="Teja Venket"
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                         />
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* badges */}
                 <div className="absolute bottom-8 right-0 z-20 bg-white border border-gray-100 rounded-xl px-4 py-2 text-xs text-gray-600 shadow-sm">
-                SUTD · Year 1
+                SUTD · Year 4
                 </div>
 
                 <div className="absolute top-8 left-0 z-20 bg-white border border-gray-100 rounded-xl px-4 py-2 text-xs text-gray-600 shadow-sm">
