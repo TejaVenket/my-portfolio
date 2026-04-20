@@ -48,7 +48,7 @@ export default function Hero() {
         {/* LEFT — text content */}
         <div>
           <div className="flex mb-6">
-            <span className="inline-flex items-center gap-2 text-sm text-gray-500 border border-gray-200 rounded-full px-4 py-1.5">
+            <span className="inline-flex items-center gap-2 text-sm text-main border border-text-accent rounded-full px-4 py-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
               Available to work · Singapore
             </span>
@@ -65,7 +65,7 @@ export default function Hero() {
           <h3 className="text-5xl font-medium mb-4">
             {" "}
             <span className="font-mono text-text-accent">{displayed}</span>
-            <span className="inline-block w-0.5 h-10 bg-gray-900 ml-1 align-middle animate-pulse" />
+            <span className="inline-block w-0.5 h-10 bg-text-accent ml-1 align-middle animate-pulse" />
           </h3>
 
 
