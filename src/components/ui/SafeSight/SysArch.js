@@ -23,7 +23,7 @@ export default function SystemArchitecture({ accent = "#19B7A5" }) {
 
       {/* Headline + subtext */}
       <div style={{ display: "grid", gap: "3rem", marginBottom: "3rem" }}>
-        <h2 style={{ fontFamily: "'DM Serif Display', serif", fontSize: "2rem", fontWeight: 400, color: "#fff", lineHeight: 1.2, margin: 0 }}>
+        <h2 style={{ fontFamily: "'DM Serif Display', serif", fontSize: "2rem", fontWeight: 400, color: "#fff", lineHeight: 1.2 }}>
           End-to-end workflow
         </h2>
         <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: 1.85 }}>
@@ -114,9 +114,9 @@ export default function SystemArchitecture({ accent = "#19B7A5" }) {
         justifyContent: "center",
       }}>
         {/* Replace null with your image path e.g. "/images/architecture-diagram.png" */}
-        {null ? (
+        {true ? (
           <Image
-            src="/images/architecture-diagram.png"
+            src="/images/SafesightPic.png"
             alt="Software architecture diagram"
             fill
             style={{ objectFit: "contain", padding: "1.5rem" }}

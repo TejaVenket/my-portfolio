@@ -89,7 +89,7 @@ export default function SolutionSection({ accent = "#19B7A5" }) {
       {/* Headline + subtext */}
       <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: "3rem", marginBottom: "2.5rem" }}>
         <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: 1.85, margin: 0 }}>
-          In collaboration with stakeholders, we designed an end-to-end solution 
+          In collaboration with the DSV warehouse supervisors, we designed an end-to-end solution 
           built on three core components: a real-time AI camera system for on-site 
           detection, a backend pipeline for processing incidents and sending automated 
           WhatsApp alerts, and a centralized user portal that enables supervisors to 

@@ -4,6 +4,7 @@ import PersonaTabs from "../ui/SafeSight/PersonaTabs";
 import ProblemCards from "../ui/SafeSight/ProblemCards";
 import SolutionSection from "../ui/SafeSight/SolutionSection";
 import SystemArchitecture from "../ui/SafeSight/SysArch";
+import CaseStudyIntro from "../ui/SafeSight/CaseStudyIntro";
 
 const personas = [
   {
@@ -374,6 +375,29 @@ export default function Safesight({ accent, accentMuted, accentBorder }) {
             <SolutionSection accent={accent} />
             <SystemArchitecture accent={accent} />
         </div>
+        {/* ============================================================
+          Phase Block 3 — User Interface Ideation and Frontend Prototyping
+          ============================================================ */}
+
+        <div style={{ gridColumn: "1 / -1", marginTop: "4rem" }}>
+            {/* Section label */}
+            <CaseStudyIntro accent={accent} accentMuted={accentMuted} accentBorder={accentBorder} />
+        </div>
+        {/* ============================================================
+          Phase Block 4 — Prototype Iterations
+          ============================================================ */}
+
+        <div style={{ gridColumn: "1 / -1", marginTop: "4rem" }}>
+            {/* Section label */}
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "2rem" }}>
+                <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.07)" }} />
+                    <p style={{ fontSize: "22px", textTransform: "uppercase", letterSpacing: "0.15em", color: accent, whiteSpace: "nowrap" }}>
+                        Phase 4 · Prototype Iterations        {/* ← change phase number + name */}
+                    </p>
+                <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.07)" }} />
+            </div>
+        </div>
+        
       </div>
     </>
   );
