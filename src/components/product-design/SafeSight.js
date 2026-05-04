@@ -5,6 +5,7 @@ import ProblemCards from "../ui/SafeSight/ProblemCards";
 import SolutionSection from "../ui/SafeSight/SolutionSection";
 import SystemArchitecture from "../ui/SafeSight/SysArch";
 import CaseStudyIntro from "../ui/SafeSight/CaseStudyIntro";
+import Prototyping from "../ui/SafeSight/Prototyping";
 
 const personas = [
   {
@@ -392,10 +393,11 @@ export default function Safesight({ accent, accentMuted, accentBorder }) {
             <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "2rem" }}>
                 <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.07)" }} />
                     <p style={{ fontSize: "22px", textTransform: "uppercase", letterSpacing: "0.15em", color: accent, whiteSpace: "nowrap" }}>
-                        Phase 4 · Prototype Iterations        {/* ← change phase number + name */}
+                        Phase 3 · Prototype Iterations        {/* ← change phase number + name */}
                     </p>
                 <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.07)" }} />
             </div>
+            <Prototyping accent={accent} accentMuted={accentMuted} accentBorder={accentBorder} />
         </div>
         
       </div>
