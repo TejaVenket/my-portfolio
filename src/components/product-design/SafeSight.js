@@ -6,6 +6,8 @@ import SolutionSection from "../ui/SafeSight/SolutionSection";
 import SystemArchitecture from "../ui/SafeSight/SysArch";
 import CaseStudyIntro from "../ui/SafeSight/CaseStudyIntro";
 import Prototyping from "../ui/SafeSight/Prototyping";
+import Testimonials from "../ui/SafeSight/Testimonials";
+import Reflections from "../ui/SafeSight/Reflections";
 
 const personas = [
   {
@@ -399,7 +401,37 @@ export default function Safesight({ accent, accentMuted, accentBorder }) {
             </div>
             <Prototyping accent={accent} accentMuted={accentMuted} accentBorder={accentBorder} />
         </div>
-        
+        {/* ============================================================
+          Phase Block 5 — User Testimonial
+          ============================================================ */}
+
+        <div style={{ gridColumn: "1 / -1", marginTop: "4rem" }}>
+            {/* Section label */}
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "2rem" }}>
+                <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.07)" }} />
+                    <p style={{ fontSize: "22px", textTransform: "uppercase", letterSpacing: "0.15em", color: accent, whiteSpace: "nowrap" }}>
+                        Phase 4 · Client Testimonial        {/* ← change phase number + name */}
+                    </p>
+                <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.07)" }} />
+            </div>
+            <Testimonials accent={accent}/>
+        </div>
+        {/* ============================================================
+          Phase Block 6 — My Reflections
+          ============================================================ */}
+
+        <div style={{ gridColumn: "1 / -1", marginTop: "4rem" }}>
+            {/* Section label */}
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "2rem" }}>
+                <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.07)" }} />
+                    <p style={{ fontSize: "22px", textTransform: "uppercase", letterSpacing: "0.15em", color: accent, whiteSpace: "nowrap" }}>
+                        My Reflection and Learnings        {/* ← change phase number + name */}
+                    </p>
+                <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.07)" }} />
+            </div>
+            <Reflections accent={accent} />
+        </div>
+
       </div>
     </>
   );
