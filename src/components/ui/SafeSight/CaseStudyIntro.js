@@ -164,6 +164,7 @@ export default function CaseStudyIntro({ accent, accentMuted, accentBorder }) {
                 fill
                 style={{ objectFit: "contain" }}
               />
+              
             ) : (
               <div style={{ textAlign: "center" }}>
                 <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.15)", margin: 0 }}>

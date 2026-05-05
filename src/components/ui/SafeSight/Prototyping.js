@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Carousel from "../Carousel";
 import Iteration3 from "./Iteration3";
+import PowerBI from "./PowerBI";
 
 
 const mySlides = [
@@ -383,6 +384,7 @@ export default function Prototyping({ accent, accentMuted, accentBorder }) {
         </div>
       </div>
       <Iteration3 accent={accent} accentMuted={accentMuted} accentBorder={accentBorder} />
+      <PowerBI accent={accent}/>
     </div>
   );
 }
