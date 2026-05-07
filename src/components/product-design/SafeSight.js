@@ -115,8 +115,6 @@ const impacts = [
 ];
 
 export default function Safesight({ accent, accentMuted, accentBorder }) {
-  const [activePersona, setActivePersona] = useState(0);
-  const persona = personas[activePersona];
   return (
     <>
       <style>{`
@@ -219,9 +217,19 @@ export default function Safesight({ accent, accentMuted, accentBorder }) {
 
 
       {/* Right: Image */}
-      <div style={{ borderRadius: "16px", overflow: "hidden", border: `0.5px solid ${accentBorder}`, background: accentMuted, aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
-        {null ? (
-          <Image src="/images/HeroPic.jpg" alt="SafeSight" fill style={{ objectFit: "cover" }} />
+      <div style={{ borderRadius: "16px", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
+        {true ? (
+          <Image
+            src="/images/SafeSight/HeroPic.jpg"
+            alt="SafeSight"
+            fill
+            style={{
+              objectFit: "cover",
+              transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+            }}
+            onMouseEnter={e => e.currentTarget.style.transform = "scale(1.05)"}
+            onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
+          />
         ) : (
           <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.2)" }}>SafeSight Dashboard</p>
         )}
