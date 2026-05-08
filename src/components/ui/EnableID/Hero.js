@@ -103,10 +103,20 @@ export default function EnableID({ accent, accentMuted, accentBorder }) {
       </div>
  
       {/* Right: Image */}
-      <div style={{ borderRadius: "16px", overflow: "hidden", border: `0.5px solid ${accentBorder}`, background: accentMuted, aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
+      <div style={{ borderRadius: "16px", aspectRatio: "4/3", display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
         {/* Swap null for your image path e.g. "/images/enableid.jpg" */}
-        {null ? (
-          <Image src="/images/enableid.jpg" alt="EnableID" fill style={{ objectFit: "cover" }} />
+        {true ? (
+          <Image 
+          src="/images/EnableID/EnableID1.png" 
+          alt="EnableID" 
+          fill 
+          style={{ 
+            objectFit: "cover",
+            transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)" 
+          }} 
+          onMouseEnter={e => e.currentTarget.style.transform = "scale(1.05)"}
+          onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
+          />
         ) : (
           <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.2)" }}>EnableID Mobile App</p>
         )}

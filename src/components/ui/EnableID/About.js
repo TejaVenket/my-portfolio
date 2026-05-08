@@ -95,7 +95,7 @@ export default function GebirahAbout({ accent }) {
               Gebirah
             </h2>
             <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.3)", letterSpacing: "0.04em", margin: 0 }}>
-              Humanitarian technology for communities in crisis
+              Humanitarian Aid 
             </p>
           </div>
 

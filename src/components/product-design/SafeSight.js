@@ -8,6 +8,7 @@ import CaseStudyIntro from "../ui/SafeSight/CaseStudyIntro";
 import Prototyping from "../ui/SafeSight/Prototyping";
 import Testimonials from "../ui/SafeSight/Testimonials";
 import Reflections from "../ui/SafeSight/Reflections";
+import PhasesContents from "../ui/ContentsPage";
 
 const personas = [
   {
@@ -246,7 +247,7 @@ export default function Safesight({ accent, accentMuted, accentBorder }) {
           <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.07)" }} />
         </div>
 
-        <div className="flex items-center" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3rem", alignItems: "start" }}>
+        <div className="flex items-center" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3rem", alignItems: "center" }}>
 
           {/* Left: contribution pills */}
           <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
@@ -346,6 +347,20 @@ export default function Safesight({ accent, accentMuted, accentBorder }) {
             </div>
           ))}
         </div>
+
+      <div style={{ gridColumn: "1 / -1", marginTop: "4rem" }}>
+        <PhasesContents
+            accent= {accent}
+            
+            phases={[
+              { number: "01", label: "Phase 1", title: "Discovery" },
+              { number: "02", label: "Phase 2", title: "Solution Design and Prototyping" },
+              { number: "03", label: "Phase 3", title: "Prototype Iterations" },
+              { number: "04", label: "Phase 4", title: "Client Testimonial" },
+            ]}
+          />
+      </div>
+
         {/* ============================================================
           PHASE SECTION 1 - Discovery Phase
           ============================================================ */}
