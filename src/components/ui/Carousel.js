@@ -81,16 +81,16 @@ export default function Carousel({ slides, accent, accentMuted, accentBorder }) 
  
       {/* Caption + dots */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-        <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.35)", margin: 0, fontStyle: "italic" }}>
+        <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.35)", marginRight: "4rem", fontStyle: "italic" }}>
           {slide.caption}
         </p>
-        <div style={{ display: "flex", gap: "6px", alignItems: "center" }}>
+        <div style={{ display: "flex", gap: "6px", alignItems: "center" }}> 
           {slides.map((_, i) => (
             <button
               key={i}
               onClick={() => setActive(i)}
               style={{
-                width: i === active ? "20px" : "6px",
+                width: i === active ? "25px" : "6px",
                 height: "6px",
                 borderRadius: "3px",
                 background: i === active ? accent : "rgba(255,255,255,0.2)",
