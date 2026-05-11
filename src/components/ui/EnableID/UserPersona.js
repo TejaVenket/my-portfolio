@@ -46,15 +46,15 @@ const personas = [
       "Find a place to seek refuge in Malaysia",
       "Find a way to reunite with his family with just photos of himself",
     ],
-    image: "/images/EnableID/Persona_Abul_Ahmed.png",
+    image: "/images/EnableID/Persona_Abdul_Ahmed.png",
   },
   {
     number: "04",
     name: "Hong Sovannarith",
     title: "Former Teacher · Refugee",
-    accent: "#EF9F27",
-    accentMuted: "rgba(239,159,39,0.08)",
-    accentBorder: "rgba(239,159,39,0.25)",
+    accent: "#E8625A",
+    accentMuted: "rgba(232,98,90,0.07)",
+    accentBorder: "rgba(232,98,90,0.2)",
     quote: "I am concerned over my identity verification and am unsure when I am considered verified to start receiving aid.",
     needs: [
       "Find a place to seek refuge in Thailand",
@@ -157,6 +157,7 @@ export default function UserPersona({ accent, accentBorder, accentMuted }) {
           animation: "fadeUp 0.3s ease both",
         }}
       >
+
         {/* Left: image */}
         <div style={{
           position: "relative",
@@ -171,7 +172,7 @@ export default function UserPersona({ accent, accentBorder, accentMuted }) {
               src={persona.image}
               alt={persona.name}
               fill
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "contain" }}
             />
           ) : (
             <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.2)" }}>{persona.name} image</p>
@@ -254,6 +255,84 @@ export default function UserPersona({ accent, accentBorder, accentMuted }) {
           </div>
 
         </div>
+      </div>
+
+      {/* ── Key User Needs summary ── */}
+      <div style={{ marginTop: "3rem" }}>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: "1rem", marginBottom: "2rem", width: "60%" }}>
+          <h2 style={{
+            fontFamily: "'DM Serif Display', serif",
+            fontSize: "2rem",
+            fontWeight: 400,
+            color: "#fff",
+            lineHeight: 1.2,
+            margin: 0,
+          }}>
+            Key User Needs
+          </h2>
+          <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: 1.85, margin: 0 }}>
+            Synthesising across all four personas, four core needs emerged that shaped our design direction.
+          </p>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
+          {[
+            {
+              number: "01",
+              heading: "Identity & Credential Verification",
+              body: "Users need a reliable way to establish and prove who they are, along with any professional qualifications they hold.",
+              accent: "#19B7A5",
+              accentMuted: "rgba(25,183,165,0.07)",
+              accentBorder: "rgba(25,183,165,0.2)",
+            },
+            {
+              number: "02",
+              heading: "Access to Services & Aid",
+              body: "Verified users need clarity on what they are entitled to and a clear path to receiving healthcare, employment, and financial support.",
+              accent: "#7F77DD",
+              accentMuted: "rgba(127,119,221,0.07)",
+              accentBorder: "rgba(127,119,221,0.2)",
+            },
+            {
+              number: "03",
+              heading: "Communication & Clarity",
+              body: "Users need transparent, readable status updates and guidance — especially those navigating unfamiliar systems in a foreign language.",
+              accent: "#EF9F27",
+              accentMuted: "rgba(239,159,39,0.07)",
+              accentBorder: "rgba(239,159,39,0.2)",
+            },
+            {
+              number: "04",
+              heading: "Family Reconnection & Continuity",
+              body: "Beyond documents, users need ways to re-establish relationships and rebuild a sense of stability and identity in their new environment.",
+              accent: "#E8625A",
+              accentMuted: "rgba(232,98,90,0.07)",
+              accentBorder: "rgba(232,98,90,0.2)",
+            },
+          ].map((point, i) => (
+            <div key={i} style={{
+              border: `0.5px solid ${point.accentBorder}`,
+              borderRadius: "16px",
+              padding: "1.5rem",
+              background: point.accentMuted,
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.5rem",
+            }}>
+              <span style={{ fontSize: "10px", fontWeight: 600, color: point.accent, letterSpacing: "0.1em" }}>
+                {point.number}
+              </span>
+              <p style={{ fontSize: "14px", fontWeight: 500, color: "#fff", margin: 0 }}>
+                {point.heading}
+              </p>
+              <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.45)", lineHeight: 1.7, margin: 0 }}>
+                {point.body}
+              </p>
+            </div>
+          ))}
+        </div>
+
       </div>
 
     </div>
