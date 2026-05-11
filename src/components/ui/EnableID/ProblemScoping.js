@@ -2,10 +2,14 @@
 
 import Image from "next/image";
 import Carousel from "../Carousel";
+import { ButtonMuted, ButtonBold } from "../Buttons";
+import UserPersona from "./UserPersona";
 
 const FIGMA_URL = "https://www.figma.com/design/PD059qNKRolmF4y4GT4MEs/SDS-Team-14?node-id=0-1&t=lyc3Yywu7P3kOy9R-1";
 const IMAGE_SRC = null;            // replace with "/images/problem-scoping.png"
 const DEFINITION_IMAGE_SRC = null; // replace with "/images/problem-definition.png"
+
+const accentMuted = "#0d1117";
 
 const insights = [
   {
@@ -142,35 +146,9 @@ export default function ProblemScoping({accent, accentBorder, accentMuted,
             <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.25)", margin: 0 }}>
               Explore our early design thinking
             </p>
-            <a
-              href={FIGMA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
-                padding: "0.5rem 1rem",
-                borderRadius: "8px",
-                border: `0.5px solid ${accentBorder}`,
-                background: accentMuted,
-                color: accent,
-                fontSize: "12px",
-                fontWeight: 500,
-                textDecoration: "none",
-                transition: "all 0.18s",
-                flexShrink: 0,
-              }}
-              onMouseEnter={e => (e.currentTarget.style.background = "rgba(25,183,165,0.14)")}
-              onMouseLeave={e => (e.currentTarget.style.background = accentMuted)}
-            >
-              View Figma exploration
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
-                <path d="M15 3h6v6" />
-                <path d="M10 14L21 3" />
-              </svg>
-            </a>
+            <ButtonMuted href="https://sites.google.com/..." accent={accent} accentBorder={accentBorder} accentMuted={accentMuted}>
+              View Project Website
+            </ButtonMuted>
           </div>
 
         </div>
@@ -350,7 +328,7 @@ export default function ProblemScoping({accent, accentBorder, accentMuted,
         </div>
 
       </div>
-
+       <UserPersona accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
     </div>
   );
 }

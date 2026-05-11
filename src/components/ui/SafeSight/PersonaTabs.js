@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const personas = [
+export const personas = [
   {
     number: "01",
     name: "Operations Lead",

@@ -4,6 +4,7 @@ import About from "../ui/EnableID/About";
 import MyRole from "../ui/EnableID/MyRole";
 import PhasesContents from "../ui/ContentsPage";
 import ProblemScoping from "../ui/EnableID/ProblemScoping";
+import Solution from "../ui/EnableID/Solution";
  
 const meta = [
   { label: "Type", value: "Product Design" },
@@ -26,6 +27,7 @@ export default function EnableID({ accent, accentMuted, accentBorder }) {
       <MyRole accent={accent} accentBorder={accentBorder} />
       <PhasesContents accent={accent} />
       <ProblemScoping accent={accent} accentBorder={accentBorder} />
+      <Solution accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
     </>
   );
 }
