@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Carousel from "../Carousel";
 import MarketResearch from "./MarketResearch";
+import SolutionBrainstorming from "./SolutionBrainstorming";
 const requirements = [
   {
     number: "01",
@@ -170,6 +171,7 @@ export default function Solution({accent, accentBorder, accentMuted,client = "To
       </div>
     </div>
         <MarketResearch accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
+        <SolutionBrainstorming accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
         {/* Initial brainstorming and concept development */}
         <div style={{ gridColumn: "1 / -1", marginTop: "1rem" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: "1rem", marginBottom: "2rem", marginTop: "4rem", width: "60%" }}>
@@ -190,105 +192,78 @@ export default function Solution({accent, accentBorder, accentMuted,client = "To
               into one scalable solution.
             </p>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
-            {/* Iteration badge */}
-            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-              <span style={{
-                fontSize: "10px",
-                fontWeight: 600,
-                letterSpacing: "0.12em",
-                textTransform: "uppercase",
-                color: accent,
-                background: accentMuted,
-                border: `0.5px solid ${accentBorder}`,
-                borderRadius: "20px",
-                padding: "3px 10px",
-              }}>
-                Iteration 01
-              </span>
-              <div style={{ height: "0.5px", flex: 1, background: "rgba(255,255,255,0.07)" }} />
-            </div>
-
-            {/* Heading */}
-            <h3 style={{
-              fontFamily: "'DM Serif Display', serif",
-              fontSize: "1.5rem",
-              fontWeight: 400,
-              color: "#fff",
-              lineHeight: 1.25,
-              margin: 0,
-            }}>
-              Establishing the Core Interface using AutoCAD
-            </h3>
-
-            {/* Description */}
-            <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.5)", lineHeight: 1.85, margin: 0 }}>
-              Building on the defined constraints and design principles, I developed an initial
-              low-fidelity concept to establish the overall structure of the User Portal. This
-              iteration focused on prioritising simplicity and immediate usability by designing
-              a single, centralised landing page where all key interactions could take place
-              without additional navigation.
-            </p>
-
-            {/* Key features introduced */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <p style={{ fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.3)", margin: 0 }}>
-                Key Features
+          
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.25rem" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
+              {/* Description */}
+              <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.5)", lineHeight: 1.85, margin: 0 }}>
+                Building on the defined constraints and design principles, I developed an initial
+                low-fidelity concept to establish the overall structure of the User Portal. This
+                iteration focused on prioritising simplicity and immediate usability by designing
+                a single, centralised landing page where all key interactions could take place
+                without additional navigation.
               </p>
-              {[
-                { feature: "Mini dashboard", desc: "Quick access to key KPIs at a glance" },
-                { feature: "System log", desc: "Filterable by date, time, type, and location" },
-                { feature: "Incident drawer", desc: "Expandable panel with metadata and video clip" },
-              ].map((item) => (
-                <div key={item.feature} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                  <div style={{
-                    width: "5px",
-                    height: "5px",
-                    borderRadius: "50%",
-                    background: accent,
-                    flexShrink: 0,
-                    marginTop: "7px",
-                  }} />
-                  <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.55)", lineHeight: 1.6, margin: 0 }}>
-                    <span style={{ color: "rgba(255,255,255,0.85)", fontWeight: 500 }}>{item.feature}</span>
-                    {" — "}{item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
 
-            {/* Goal callout */}
-            <div style={{
-              borderLeft: `2px solid ${accent}`,
-              paddingLeft: "1rem",
-              marginTop: "0.25rem",
-            }}>
-              <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.4)", lineHeight: 1.7, margin: 0, fontStyle: "italic" }}>
-                Aimed at defining the core interaction model and information hierarchy, ensuring
-                supervisors could efficiently scan, investigate, and act on incidents within a
-                unified interface.
-              </p>
-            </div>
-          </div>
-
-          {/* Right: image */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "2px" }}>
-              <div style={{
-                  position: "relative",
-                  width: "100%",
-                  aspectRatio: "6/3",
-                  borderRadius: "40px",
-              }}>
-                  <Image
-                  src="/images/SafeSight/AutoCAD.png"
-                  alt="Iteration 1 — low fidelity prototype"
-                  fill
-                  style={{ objectFit: "contain" }}
-                  />
+              {/* Key features introduced */}
+              <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+                <p style={{ fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.3)", margin: 0 }}>
+                  Key Features
+                </p>
+                {[
+                  { feature: "Mini dashboard", desc: "Quick access to key KPIs at a glance" },
+                  { feature: "System log", desc: "Filterable by date, time, type, and location" },
+                  { feature: "Incident drawer", desc: "Expandable panel with metadata and video clip" },
+                ].map((item) => (
+                  <div key={item.feature} style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
+                    <div style={{
+                      width: "5px",
+                      height: "5px",
+                      borderRadius: "50%",
+                      background: accent,
+                      flexShrink: 0,
+                      marginTop: "7px",
+                    }} />
+                    <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.55)", lineHeight: 1.6, margin: 0 }}>
+                      <span style={{ color: "rgba(255,255,255,0.85)", fontWeight: 500 }}>{item.feature}</span>
+                      {" — "}{item.desc}
+                    </p>
+                  </div>
+                ))}
               </div>
-              <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.25)",fontStyle: "italic", textAlign: "center" }}>
-                  Low-fidelity wireframe using AutoCAD
-              </p>
+
+              {/* Goal callout */}
+              <div style={{
+                borderLeft: `2px solid ${accent}`,
+                paddingLeft: "1rem",
+                marginTop: "0.25rem",
+              }}>
+                <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.4)", lineHeight: 1.7, margin: 0, fontStyle: "italic" }}>
+                  Aimed at defining the core interaction model and information hierarchy, ensuring
+                  supervisors could efficiently scan, investigate, and act on incidents within a
+                  unified interface.
+                </p>
+              </div>
+            </div>
+
+            {/* Right: image */}
+            <div style={{ display: "flex", flexDirection: "column", gap: "2px" }}>
+                <div style={{
+                    position: "relative",
+                    width: "100%",
+                    aspectRatio: "6/3",
+                    overflow: "hidden",
+                }}>
+                    <Image
+                    src="/images/EnableID/Brainstorming.png"
+                    alt="Iteration 1 — low fidelity prototype"
+                    fill
+                    style={{ objectFit: "contain", borderRadius: "20px" }}
+                    />
+                </div>
+                <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.25)",fontStyle: "italic", textAlign: "center" }}>
+                    Low-fidelity wireframe using AutoCAD
+                </p>
+            </div>
           </div>
         </div>              
   </div>

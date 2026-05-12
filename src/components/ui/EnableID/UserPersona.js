@@ -46,7 +46,7 @@ const personas = [
       "Find a place to seek refuge in Malaysia",
       "Find a way to reunite with his family with just photos of himself",
     ],
-    image: "/images/EnableID/Persona_Abdul_Ahmed.png",
+    image: "/images/EnableID/Persona_Abul_Ahmed.png",
   },
   {
     number: "04",
