@@ -6,7 +6,7 @@ import Image from "next/image";
 // slides prop shape:
 // [{ image: "/images/...", label: "Slide 01", caption: "Description" }]
  
-export default function Carousel({ slides, accent, accentMuted, accentBorder }) {
+export default function Carousel({ slides, accent, accentMuted, accentBorder, fit = "cover", aspectRatio = "16/9"  }) {
   const [active, setActive] = useState(0);
   const slide = slides[active];
  
@@ -19,7 +19,7 @@ export default function Carousel({ slides, accent, accentMuted, accentBorder }) 
         overflow: "hidden",
         border: `0.5px solid ${accentBorder}`,
         background: accentMuted,
-        aspectRatio: "16/9",
+        aspectRatio: aspectRatio,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -31,7 +31,7 @@ export default function Carousel({ slides, accent, accentMuted, accentBorder }) 
             src={slide.image}
             alt={slide.caption}
             fill
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: fit }}
           />
         ) : (
           <div style={{ textAlign: "center" }}>

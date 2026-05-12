@@ -3,6 +3,7 @@ import Carousel from "../Carousel";
 
 import SolutionBrainstorming from "./SolutionBrainstorming";
 import FinalFeatures from "./FinalFeatures";
+import Storyboard from "./Storyboard";
 
 export default function Solution({accent, accentBorder, accentMuted,
 }) {
@@ -26,8 +27,11 @@ export default function Solution({accent, accentBorder, accentMuted,
       </div>
 
       {/* Sub-phase label */}
+      
       <SolutionBrainstorming accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
+      <Storyboard accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
       <FinalFeatures accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
+
     </div>
   );
 }
