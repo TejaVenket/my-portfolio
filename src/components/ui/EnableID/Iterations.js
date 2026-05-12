@@ -1,10 +1,7 @@
 import Image from "next/image";
 import Carousel from "../Carousel";
 
-import SolutionBrainstorming from "./SolutionBrainstorming";
-import FinalFeatures from "./FinalFeatures";
-
-export default function Solution({accent, accentBorder, accentMuted,
+export default function Iterations({accent, accentBorder, accentMuted,
 }) {
   return (
     <div style={{ gridColumn: "1 / -1", marginTop: "1rem" }}>
@@ -20,14 +17,23 @@ export default function Solution({accent, accentBorder, accentMuted,
           whiteSpace: "nowrap",
           margin: 0,
         }}>
-          Phase 3 · Solution Brainstorming
+          Phase 4 · Prototype Iterations
         </p>
         <div style={{ flex: 1, height: "0.5px", background: "rgba(255,255,255,0.07)" }} />
       </div>
 
       {/* Sub-phase label */}
-      <SolutionBrainstorming accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
-      <FinalFeatures accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
+      <div style={{ marginBottom: "2rem" }}>
+        <p style={{
+          fontSize: "11px",
+          textTransform: "uppercase",
+          letterSpacing: "0.15em",
+          color: accent,
+          margin: 0,
+        }}>
+          Phase 2.1 · Ideation
+        </p>
+      </div>
     </div>
   );
 }

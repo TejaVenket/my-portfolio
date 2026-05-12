@@ -162,7 +162,7 @@ export default function MarketResearch({ accent = "#19B7A5", accentBorder = "rgb
           color: accent,
           margin: 0,
         }}>
-          Phase 2.2 · Market Research
+          Phase 2.1 · Market Research
         </p>
       </div>
 
@@ -377,6 +377,23 @@ export default function MarketResearch({ accent = "#19B7A5", accentBorder = "rgb
           );
         })}
       </div>
+      <div style={{
+            borderLeft: `2px solid ${accent}`,
+            paddingLeft: "1rem",
+            padding: "1rem 1rem 1rem 1.25rem",
+            borderRadius: "0 12px 12px 0",
+            border: `0.5px solid ${accentBorder}`,
+            borderLeft: `2px solid ${accent}`,
+            background: accentMuted,
+            marginTop: "2rem",
+          }}>
+            <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.5)", lineHeight: 1.75, fontStyle: "italic" }}>
+              Our market research revealed a major gap in the refugee technology ecosystem. 
+              There is no comprehensive, refugee-centered digital platform that combines 
+              identity, verification, employability, accessibility, and family reconnection 
+              into one scalable solution.
+            </p>
+          </div>
 
     </div>
   );

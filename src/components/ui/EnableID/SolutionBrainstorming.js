@@ -3,23 +3,23 @@
 import Image from "next/image";
 
 const FIGMA_URL = "#"; // replace with your Figma brainstorming link
-const BRAINSTORM_IMAGE = null; // replace with "/images/EnableID/Brainstorming.png"
+const BRAINSTORM_IMAGE = "/images/EnableID/Brainstorming_new.png"; 
 
 const timeline = [
-  { weeks: "Weeks 1–5", label: "Problem Scoping", desc: "Stakeholder research, ideation, and problem definition", muted: true },
-  { weeks: "Weeks 6–13", label: "Build & Test", desc: "Prototyping, implementation, and testing", muted: false },
+  { weeks: "Weeks 1–5", label: "Problem Scoping", desc: "Stakeholder research, ideation, and problem definition", muted: false },
+  { weeks: "Weeks 6–13", label: "Build & Test", desc: "Prototyping, implementation, and testing", muted: true },
 ];
 
 const mustHave = [
   { number: "01", name: "Digital ID Card", desc: "A portable digital identity profile for refugees." },
   { number: "02", name: "Document Upload System", desc: "Local file uploads and an in-app document scanning feature." },
-  { number: "03", name: "OCR-Based Extraction", desc: "Automatically extracts key information from uploaded documents — date of birth, blood type, education, and more." },
+  { number: "03", name: "OCR-Based Extraction", desc: "Automatically extracted key information from uploaded documents, such as date of birth, blood type, education details, and other relevant fields depending on document type." },
   { number: "04", name: "Notification System", desc: "Allows refugees to receive updates on document approval and verification status." },
 ];
 
 const goodToHave = [
   { number: "01", name: "Facial Recognition Login", desc: "Secure login using facial authentication." },
-  { number: "02", name: "Family Reconnection", desc: "Upload photos of missing relatives and use facial matching to reconnect separated families." },
+  { number: "02", name: "Family Reconnection", desc: "Allows refugees to upload photos of missing relatives and use automated facial matching against the platform’s database to reconnect separated families." },
   { number: "03", name: "AI Chatbot Assistant", desc: "Guidance on using the app and answering refugee-related questions about UNHCR services." },
 ];
 
@@ -37,7 +37,7 @@ export default function SolutionBrainstorming({ accent = "#19B7A5", accentBorder
       {/* Sub-phase label */}
       <div style={{ marginBottom: "2rem" }}>
         <p style={{ fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.15em", color: accent, margin: 0 }}>
-          Phase 1.5 · Solution Brainstorming & Concept Development
+          Phase 3.1 · Solution Brainstorming & Concept Development
         </p>
       </div>
 
@@ -52,7 +52,7 @@ export default function SolutionBrainstorming({ accent = "#19B7A5", accentBorder
           focused, achievable feature set.
         </p>
       </div>
-
+    
       {/* ── Row 1: Timeline constraint + brainstorm image ── */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", marginBottom: "1rem" }}>
 
@@ -105,7 +105,10 @@ export default function SolutionBrainstorming({ accent = "#19B7A5", accentBorder
 
           {/* Body copy */}
           <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.45)", lineHeight: 1.8, margin: 0 }}>
-            Each team member brainstormed independently before consolidating ideas in Figma.
+            To approach ideation systematically, each team member first brainstormed independently, 
+            focusing on solutions that directly addressed the refugee identification and verification 
+            challenges we had uncovered through our research. We documented all our ideas collaboratively 
+            in Figma, which allowed us to visually organize and compare different possibilities.
             After our first ideation session we had generated over{" "}
             <span style={{ color: "#fff", fontWeight: 500 }}>30 potential features</span>,
             which we then critically reviewed against four key questions.
@@ -162,7 +165,7 @@ export default function SolutionBrainstorming({ accent = "#19B7A5", accentBorder
           justifyContent: "center",
         }}>
           {BRAINSTORM_IMAGE ? (
-            <Image src={BRAINSTORM_IMAGE} alt="Brainstorming session" fill style={{ objectFit: "cover" }} />
+            <Image src={BRAINSTORM_IMAGE}  alt="Brainstorming session" fill style={{ objectFit: "cover" }} />
           ) : (
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "10px" }}>
               <div style={{ width: "44px", height: "44px", borderRadius: "12px", border: `0.5px solid ${accentBorder}`, display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -200,7 +203,7 @@ export default function SolutionBrainstorming({ accent = "#19B7A5", accentBorder
         </div>
         <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.45)", lineHeight: 1.75, margin: 0 }}>
           Through several rounds of discussion and refinement, we narrowed 30+ ideas to{" "}
-          <span style={{ color: "#fff", fontWeight: 500 }}>seven key features</span>, each evaluated on strengths, weaknesses, potential impact, and a rough execution plan — including research into APIs, AI services, and technical feasibility. Features were then scored{" "}
+          <span style={{ color: "#fff", fontWeight: 500 }}>seven key features</span>, each evaluated on strengths, weaknesses, potential impact, and a rough execution plan — including research into APIs, AI services, and technical feasibility. To ensure alignment across both the team and client expectations, we conducted a voting and ranking exercise where features were scored from{" "}
           <span style={{ color: "#fff", fontWeight: 500 }}>1–10</span> across value, feasibility, and priority.
         </p>
       </div>
