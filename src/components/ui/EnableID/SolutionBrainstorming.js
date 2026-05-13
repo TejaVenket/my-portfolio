@@ -6,7 +6,7 @@ const FIGMA_URL = "#"; // replace with your Figma brainstorming link
 const BRAINSTORM_IMAGE = "/images/EnableID/Brainstorming_new.png"; 
 
 const timeline = [
-  { weeks: "Weeks 1–5", label: "Problem Scoping", desc: "Stakeholder research, ideation, and problem definition", muted: false },
+  { weeks: "Weeks 1–5", label: "Problem Scoping", desc: "Stakeholder research, ideation, problem definition,solution brainstorming and early prototyping", muted: false },
   { weeks: "Weeks 6–13", label: "Build & Test", desc: "Prototyping, implementation, and testing", muted: true },
 ];
 
