@@ -2,6 +2,9 @@ import Image from "next/image";
 import Carousel from "../Carousel";
 import { ButtonBold, ButtonMuted } from "../Buttons";
 
+import Learnings from "./Iter2Learnings";
+import Iteration3 from "./Iteration3";
+
 const timeline = [
   { weeks: "Weeks 1–2", label: "Problem Scoping", desc: "Stakeholder research, ideation, and problem definition", muted: true },
   { weeks: "Weeks 3–13", label: "Build & Test", desc: "Prototyping, implementation, and testing", muted: false },
@@ -250,7 +253,7 @@ export default function Iterations({accent, accentBorder, accentMuted,
               lineHeight: 1.25,
               margin: 0,
             }}>
-              Mid-Fidelity Prototype in Figma
+              Low-Fidelity Prototype Iteration 2
             </h3>
 
             <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.5)", lineHeight: 1.85, margin: 0 }}>
@@ -321,13 +324,15 @@ export default function Iterations({accent, accentBorder, accentMuted,
             Interaction flows
           </p>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(7, 1fr)", gap: "1rem" }}>
             {[
-              { label: "Digital ID Card Reveal", src: "/images/EnableID/Iter2_IDCard.gif" },   // replace null with "/videos/flow-id-card.mp4"
-              { label: "Document Upload", src: null },           // replace null with "/videos/flow-upload.mp4"
-              { label: "Document Scanning", src: null },         // replace null with "/videos/flow-scan.mp4"
-              { label: "AI Chatbot", src: null },                // replace null with "/videos/flow-chatbot.mp4"
-              { label: "Notifications & Verification", src: null }, // replace null with "/videos/flow-notifications.mp4"
+              { label: "Digital ID Card Reveal", src: "/images/EnableID/Iter2_IDCard.gif" },   
+              { label: "Document Upload", src: "/images/EnableID/Doc_Upload.gif" },           
+              { label: "Document Scanning", src: "/images/EnableID/Scan_upload.gif" },         
+              { label: "AI Chatbot", src: "/images/EnableID/Chatbot_gif.gif" },                
+              { label: "Notifications & Verification", src: "/images/EnableID/Notifications.gif" },
+              { label: "Resource Locator", src: "/images/EnableID/Resource_Locator.gif" }, 
+              { label: "Checking Verification Status", src: "/images/EnableID/VerificationStatus.gif" },
             ].map((flow, i) => (
               <div key={i} style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
 
@@ -363,6 +368,7 @@ export default function Iterations({accent, accentBorder, accentMuted,
                   {flow.src ? (
                     <Image
                       src={flow.src}
+                      alt = "Showing QR code"
                       fill
                       style={{ width: "100%", height: "100%", objectFit: "cover", position: "absolute", inset: 0 }}
                     />
@@ -391,9 +397,22 @@ export default function Iterations({accent, accentBorder, accentMuted,
               </div>
             ))}
           </div>
+          <p style={{ fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.12em", color: "rgba(255,255,255,0.3)", marginTop: "4rem" }}>
+            Prototype Pages
+          </p>
+          <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: '12px', overflow: 'hidden' }}>
+            <Image
+              src="/images/EnableID/Iteration2_FullUI.png"
+              alt="Next"
+              fill
+              style={{ objectFit: 'contain', borderRadius: '12px', overflow: 'hidden' }} // or 'contain'
+            />
+          </div>
         </div>
 
       </div>
+      <Learnings accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
+      <Iteration3 accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
     </div>
   );
 }
