@@ -64,7 +64,7 @@ export default function ProductDesignPage() {
   return (
     <section
       style={{
-        background: "#0d1117",
+        background: "#0E2439",
         minHeight: "100vh",
         padding: "5rem 2rem 6rem",
         fontFamily: "'DM Sans', sans-serif",

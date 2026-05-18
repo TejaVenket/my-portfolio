@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import Progress from "../ui/PetBnB/Progress";
+
 const meta = [
   { label: "Type", value: "App Design" },
   { label: "Model", value: "Two-sided Market" },
@@ -58,6 +60,7 @@ export default function PetBnB({ accent, accentMuted, accentBorder }) {
           <p style={{ fontSize: "12px", color: "rgba(255,255,255,0.2)" }}>PetBnB App Screens</p>
         )}
       </div>
+      <Progress accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
     </>
   );
 }

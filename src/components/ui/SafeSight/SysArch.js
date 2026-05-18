@@ -107,7 +107,7 @@ export default function SystemArchitecture({ accent = "#19B7A5" }) {
         aspectRatio: "16/9",
         borderRadius: "16px",
         border: "0.5px solid rgba(255,255,255,0.08)",
-        background: "rgba(255,255,255,0.02)",
+        background: "white",
         overflow: "hidden",
         display: "flex",
         alignItems: "center",
@@ -116,10 +116,10 @@ export default function SystemArchitecture({ accent = "#19B7A5" }) {
         {/* Replace null with your image path e.g. "/images/architecture-diagram.png" */}
         {true ? (
           <Image
-            src="/images/SafeSight/SafesightPic.png"
+            src="/images/SafeSight/Software-Arch.jpg"
             alt="Software architecture diagram"
             fill
-            style={{ objectFit: "contain", padding: "1.5rem" }}
+            style={{ objectFit: "contain" }}
           />
         ) : (
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
