@@ -16,7 +16,7 @@ export default function Card({ title, category, description, tags, year, href, a
       {/* back card */}
       <div
         className="absolute inset-0 rounded-2xl border border-gray-200 transition-all duration-500 ease-[cubic-bezier(.34,1.56,.64,1)] rotate-[4deg] translate-y-1.5 group-hover:rotate-[8deg] group-hover:translate-y-4 group-hover:translate-x-2"
-        style={{ background: hovered ? (hoverColor ?? "#19B7A5") : (accentColor ?? "#e3fefb") }}
+        style={{ background: "#19B7A5" }}
       />
 
       {/* front card */}

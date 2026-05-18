@@ -84,14 +84,15 @@ export default function Hero() {
 
             <a
               href="/resume.pdf"
+              download="Teja_Venket_Resume.pdf"
               className="border border-text-accent font-sans text-main px-7 py-3 rounded-xl text-sm font-medium hover:bg-accent hover:border-bg transition"
             >
-              Download CV
+              Download my CV
             </a>
           </div>
 
           <div className="flex gap-2 flex-wrap">
-            {["React", "Next.js", "Tailwind", "Python", "TypeScript"].map((tag) => (
+            {["React", "Next.js", "Tailwind", "Python", "TypeScript","Figma", "Wordpress", "Machine Learning and AI"].map((tag) => (
               <span
                 key={tag}
                 className="text-xs text-gray-400 border border-gray-100 rounded-full px-4 py-1.5"

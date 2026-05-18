@@ -10,11 +10,11 @@ const projects = [
     icon: "/images/Internship/NCS_Logo.jpg",
     preview: "/images/ProjectPage/NCS-grp-pic.jpg", // image shown on the right
     description: "Explore my contributions as a UI/UX Design Intern at NCS",
-    tags: ["Figma", "Tailwind", "Vercel"],
-    year: "August 2025 to January 2026",
+    tags: ["Figma", "Design Thinking", "User Research", "User Testing", "Video Editing"],
+    year: "August 2024 to January 2025",
     href: "/projects/internship",
-    accentColor: "#19B7A5",
-    hoverColor: "#436291",
+    accentColor: "#19B7A5", 
+    hoverColor: "#436291", 
     backgroundColor: "#0E2439",
   },
   {
@@ -23,11 +23,11 @@ const projects = [
     icon: "/images/ProjectPage/Product-design-icon.png",
     preview: "/images/ProjectPage/pd-cover.jpg", // image shown on the left
     description: "Explore my product design projects from Humanitarian Aid designs to Warehouse Monitoring Systems",
-    tags: ["Figma", "Design Thinking", "Storyboarding"],
-    year: "2025",
+    tags: ["Figma", "Design Thinking", "Storyboarding", "Market Analysis", "Prototyping"],
+    year: "2025-2026",
     href: "/projects/product-design",
     accentColor: "#19B7A5",
-    hoverColor: "#2E879F",
+    hoverColor: "#436291",
     backgroundColor: "#0E2439",
   },
   {
@@ -36,8 +36,8 @@ const projects = [
     icon: "/images/ProjectPage/Machine-learning-ai-icon.png",
     preview: "/images/ProjectPage/ml-cover.jpg", // image shown on the right
     description: "Explore my ML/AI projects, from smart chatbots to deployed safety monitoring systems",
-    tags: ["Python", "Synthetic Data Generation", "Design Thinking"],
-    year: "2025",
+    tags: ["Python", "Synthetic Data Generation", "Design Thinking", "Prototyping", "Deployment"],
+    year: "2025-2026",
     href: "/projects/machine-learning",
     accentColor: "#19B7A5",
     hoverColor: "#436291",
@@ -80,7 +80,7 @@ export default function Projects() {
   const previewSide = cardSide === "left" ? "right" : "left";
 
   return (
-    <div ref={sectionRef} style={{ height: "500vh" }}>
+    <div ref={sectionRef} id="projects" style={{ height: "500vh" }}>
       <div
         className="sticky top-0 h-screen flex flex-col justify-center px-8 md:px-16 overflow-hidden"
         style={{ background: "#0E2439" }}
