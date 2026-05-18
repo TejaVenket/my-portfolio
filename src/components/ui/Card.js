@@ -1,8 +1,9 @@
 "use client"
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
-export default function Card({ title, category, description, tags, year, href, accentColor, backgroundColor, hoverColor }) {
+export default function Card({ title, category, description, tags, year, href, accentColor, backgroundColor, hoverColor, icon }) {
   const [hovered, setHovered] = useState(false);
   return (
     <Link
@@ -12,7 +13,7 @@ export default function Card({ title, category, description, tags, year, href, a
     onMouseLeave={() => setHovered(false)}
     >
 
-      {/* back card — the "stacked" one underneath */}
+      {/* back card */}
       <div
         className="absolute inset-0 rounded-2xl border border-gray-200 transition-all duration-500 ease-[cubic-bezier(.34,1.56,.64,1)] rotate-[4deg] translate-y-1.5 group-hover:rotate-[8deg] group-hover:translate-y-4 group-hover:translate-x-2"
         style={{ background: hovered ? (hoverColor ?? "#19B7A5") : (accentColor ?? "#e3fefb") }}
@@ -26,10 +27,14 @@ export default function Card({ title, category, description, tags, year, href, a
 
         <div>
           {/* icon box */}
-          <div className="w-11 h-11 rounded-xl border border-gray-100 bg-gray-50 flex items-center justify-center mb-5">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
-            </svg>
+          <div className="w-11 h-11 rounded-xl border border-gray-100 bg-gray-50 flex items-center justify-center mb-5 overflow-hidden">
+            {icon ? (
+              <Image src={icon} alt={title} width={44} height={44} className="object-contain w-full h-full rounded-xl" />
+            ) : (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+            )}
           </div>
 
           <p className="text-[11px] font-sans text-gray-200 uppercase tracking-widest mb-1">{category}</p>

@@ -104,35 +104,35 @@ export default function Hero() {
 
         {/* RIGHT — photo */}
         <div className="flex justify-center items-center">
-            <div className="group relative w-[400px] h-[530px] animate-[float_4s_ease-in-out_infinite]">
+            <div className="group relative w-[500px] h-[700px] animate-[float_4s_ease-in-out_infinite]">
                 {/* background shape */}
                 <div className="absolute inset-0 flex items-center justify-center transition-all duration-500">
-                <div className="relative w-[340px] h-[430px] rounded-t-[200px] bg-[#2E879F] transition-colors duration-500 group-hover:bg-[#436291]">
+                <div className="relative w-[480px] h-[570px] rounded-t-[200px] bg-[#2E879F] transition-colors duration-500 group-hover:bg-[#436291]">
                     {/* extra little corner accents */}
-                    <div className="absolute top-6 left-6 w-8 h-8 bg-[#19B7A5] rotate-45" />
-                    <div className="absolute bottom-6 right-6 w-8 h-8 bg-[#19B7A5] rotate-45" />
+                    <div className="absolute top-10 left-12 w-8 h-8 bg-[#19B7A5] rotate-45" />
+                    <div className="absolute bottom-0 right-6 w-8 z-10 h-8 bg-[#19B7A5] rotate-45" />
                 </div>
                 </div>
 
                 {/* profile image */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                    {/* <div className="relative w-[430px] h-[600px] -translate-y-40">
-                        <Image
-                        src="/images/profile.png"
-                        alt="Teja Venket"
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
-                    </div> */}
+                  <div className="relative w-[440px] h-[530px] rounded-t-[200px] overflow-hidden">
+                    <Image
+                      src="/images/Profilepic.jpg"
+                      alt="Teja Venket"
+                      fill
+                      className="object-cover object-[center_50%] transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
                 </div>
 
                 {/* badges */}
-                <div className="absolute bottom-8 right-0 z-20 bg-white border border-gray-100 rounded-xl px-4 py-2 text-xs text-gray-600 shadow-sm">
-                SUTD · Year 4
+                <div className="absolute bottom-[35px] right-[-50px] z-20 bg-white border border-gray-100 rounded-xl px-4 py-2 text-xs text-gray-600 shadow-sm">
+                  SUTD · Year 4
                 </div>
 
-                <div className="absolute top-8 left-0 z-20 bg-white border border-gray-100 rounded-xl px-4 py-2 text-xs text-gray-600 shadow-sm">
-                CS · Design
+                <div className="absolute top-[80px] left-[10px] z-20 bg-white border border-gray-100 rounded-xl px-4 py-2 text-xs text-gray-600 shadow-sm">
+                  CS · Design
                 </div>
             </div>
             </div>
