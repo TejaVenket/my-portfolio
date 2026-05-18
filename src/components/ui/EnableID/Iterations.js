@@ -5,6 +5,7 @@ import { ButtonBold, ButtonMuted } from "../Buttons";
 import Learnings from "./Iter2Learnings";
 import Iteration3 from "./Iteration3";
 
+
 const timeline = [
   { weeks: "Weeks 1–2", label: "Problem Scoping", desc: "Stakeholder research, ideation, and problem definition", muted: true },
   { weeks: "Weeks 3–13", label: "Build & Test", desc: "Prototyping, implementation, and testing", muted: false },

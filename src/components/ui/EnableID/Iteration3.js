@@ -1,3 +1,11 @@
+"use client";
+
+import Image from "next/image";
+
+import ExperimentingUI from "./ExperimentingUI";
+import FinalUI from "./FinalUI";
+
+
 export default function Iteration3({ accent, accentBorder, accentMuted }) {
   const principles = [
     {
@@ -102,12 +110,13 @@ export default function Iteration3({ accent, accentBorder, accentMuted }) {
             fontWeight: 400,
             color: "#fff",
             lineHeight: 1.25,
-            marginTop: "4rem",
-            marginBottom: "1rem",
+            marginTop: "4rem",          
         }}>
             Mid-fidelity Prototype
         </h3>
       </div>
+      <ExperimentingUI accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
+      <FinalUI accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
     </div>
   );
 }
