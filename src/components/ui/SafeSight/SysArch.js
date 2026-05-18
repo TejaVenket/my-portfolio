@@ -116,7 +116,7 @@ export default function SystemArchitecture({ accent = "#19B7A5" }) {
         {/* Replace null with your image path e.g. "/images/architecture-diagram.png" */}
         {true ? (
           <Image
-            src="/images/SafesightPic.png"
+            src="/images/SafeSight/SafesightPic.png"
             alt="Software architecture diagram"
             fill
             style={{ objectFit: "contain", padding: "1.5rem" }}

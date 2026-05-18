@@ -2,19 +2,19 @@ import Image from "next/image";
 
 const problems = [
   {
-    image: "/images/Frame1.jpg",
+    image: "/images/SafeSight/Frame1.jpg",
     title: "Call from Client",
     description:
       "A safety incident such as crate toppling occurs due to SOP violations. The violation usually goes unnoticed until a customer files a complaint days later.",
   },
   {
-    image: "/images/Frame2_new.jpg",
+    image: "/images/SafeSight/Frame2_new.jpg",
     title: "Rummaging CCTV Footage",
     description:
       "To identify the root cause, supervisors must watch hours of CCTV footage. This is a tedious process that consumes up to 8 hours.",
   },
   {
-    image: "/images/Frame3.jpg",
+    image: "/images/SafeSight/Frame3.jpg",
     title: "Resolution Process",
     description:
       "Under intense pressure to respond to customers promptly, supervisors must interview staff and draft formal reports. This process drags on for two full days before the case can be resolved.",

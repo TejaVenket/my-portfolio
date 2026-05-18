@@ -19,7 +19,7 @@ export const personas = [
       "Improve reliability of incident data & summaries",
       "Streamline reporting workflow",
     ],
-    image: "/images/User Persona Louise new.png", // replace with "/images/persona-1.jpg"
+    image: "/images/SafeSight/User Persona Louise new.png", // replace with "/images/persona-1.jpg"
   },
   {
     number: "02",
@@ -36,7 +36,7 @@ export const personas = [
       "Simplify the process of giving feedback to operators",
       "Improve clarity and evidence for toolbox meetings",
     ],
-    image: "/images/User Persona Supervisor.png", // replace with "/images/persona-2.jpg"
+    image: "/images/SafeSight/User Persona Supervisor.png", // replace with "/images/persona-2.jpg"
   },
   {
     number: "03",
@@ -53,7 +53,7 @@ export const personas = [
       "Reducing unnecessary disruptions or confusion",
       "Getting home on time after a long commute",
     ],
-    image: "/images/User Persona Operator.png", // replace with "/images/persona-3.jpg"
+    image: "/images/SafeSight/User Persona Operator.png", // replace with "/images/persona-3.jpg"
   },
 ];
 

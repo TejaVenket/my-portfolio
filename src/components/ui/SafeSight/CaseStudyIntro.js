@@ -160,7 +160,7 @@ export default function CaseStudyIntro({ accent, accentMuted, accentBorder }) {
           }}>
             {true ? (
               <Image
-                src="/images/Dashboard.jpg"
+                src="/images/SafeSight/Dashboard.jpg"
                 alt="SafeSight dashboard"
                 fill
                 style={{ objectFit: "contain" }}
