@@ -4,6 +4,7 @@ import { ButtonBold, ButtonMuted } from "../Buttons";
 
 import Learnings from "./Iter2Learnings";
 import Iteration3 from "./Iteration3";
+import UserFlow from "./UserJourney";
 
 
 const timeline = [
@@ -414,6 +415,7 @@ export default function Iterations({accent, accentBorder, accentMuted,
       </div>
       <Learnings accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
       <Iteration3 accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
+      <UserFlow accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
     </div>
   );
 }

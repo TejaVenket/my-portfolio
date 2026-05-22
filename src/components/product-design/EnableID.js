@@ -7,6 +7,7 @@ import ProblemScoping from "../ui/EnableID/ProblemScoping";
 import SolutionRequirements from "../ui/EnableID/SolutionRequirements";
 import Solution from "../ui/EnableID/Solution";
 import Iterations from "../ui/EnableID/Iterations";
+import UserFlow from "../ui/EnableID/UserJourney";
  
 const meta = [
   { label: "Type", value: "Product Design" },
