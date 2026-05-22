@@ -2,14 +2,14 @@
 
 /* Base variables */
 :root {
-  --background: #0E2439;
+  --background: #0D1B2A;
   --foreground: #ffffff;
 }
 
 /* Tailwind theme tokens */
 @theme inline {
   /* Backgrounds */
-  --color-bg: #0E2439;
+  --color-bg: #0D1B2A;
   --color-bg-secondary: #2E879F;
 
   /* Text */

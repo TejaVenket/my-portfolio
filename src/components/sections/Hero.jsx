@@ -70,7 +70,7 @@ export default function Hero() {
 
 
           <p className="text-lg font-sans text-main leading-relaxed mb-10">
-            Computer Science and Design student at SUTD. I care about building impactful 
+            Just graduated as a Computer Science and Design student at SUTD. I care about building impactful 
             and meaningful products that solve real problems.
           </p>
 

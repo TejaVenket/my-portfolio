@@ -83,7 +83,7 @@ export default function Projects() {
     <div ref={sectionRef} id="projects" style={{ height: "500vh" }}>
       <div
         className="sticky top-0 h-screen flex flex-col justify-center px-8 md:px-16 overflow-hidden"
-        style={{ background: "#0E2439" }}
+        style={{ background: "#0D1B2A" }}
       >
 
         {/* floating orbs */}
