@@ -58,7 +58,7 @@ const steps = [
       </div>
     ),
     duration: "1:02",
-    videoSrc: "/images/EnableID/FinalUI/homepage-tut.gif",
+    videoSrc: "/images/EnableID/FinalUI/homepage.gif",
     side: "right",
   },
   {
