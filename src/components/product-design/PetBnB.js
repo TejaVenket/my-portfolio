@@ -5,6 +5,9 @@ import MyRole from "../ui/PetBnB/MyRole";
 import PetBnBResearch from "../ui/PetBnB/Research";
 import PetBnBScenarios from "../ui/PetBnB/Scenarios";
 import PetBnBPersona from "../ui/PetBnB/Persona";
+import PhasesContents from "../ui/ContentsPage";
+import PetBnBPrototype from "../ui/PetBnB/PetbnbPrototype";
+
 
 import {ButtonBold, ButtonMuted} from "../ui/Buttons";
 
@@ -73,9 +76,16 @@ export default function PetBnB( { accent, accentMuted, accentBorder }) {
       <div style={{ gridColumn: "1 / -1" }}>
       <PetBnBPoster accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
       <MyRole accent={accent} accentBorder={accentBorder} />
+      <PhasesContents accent={accent} accentBorder={accentBorder} accentMuted={accentMuted}  
+        phases={[
+        { number: "01", label: "Phase 1", title: "Discovery & Research" },
+        { number: "02", label: "Phase 2", title: "Design Sprints" },
+        { number: "03", label: "Phase 3", title: "Build & Test" },
+      ]}/>
       <PetBnBResearch accent={accent} accentBorder={accentBorder} />
       <PetBnBPersona accent={accent} accentBorder={accentBorder} />
       <PetBnBScenarios accent={accent} accentBorder={accentBorder} />
+      <PetBnBPrototype accent={accent} accentBorder={accentBorder} />
       </div>
     </>
   );
