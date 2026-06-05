@@ -7,6 +7,10 @@ import PetBnBScenarios from "../ui/PetBnB/Scenarios";
 import PetBnBPersona from "../ui/PetBnB/Persona";
 import PhasesContents from "../ui/ContentsPage";
 import PetBnBPrototype from "../ui/PetBnB/PetbnbPrototype";
+import PetBnBPersonasV2 from "../ui/PetBnB/Petbnbpersonasv2";
+import PetBnBStudy from "../ui/PetBnB/Petbnbstudy";
+import PetBnBChanges from "../ui/PetBnB/Petbnbchanges";
+import PetBnBPrototypeV2 from "../ui/PetBnB/Petbnbprototypev2";
 
 
 import {ButtonBold, ButtonMuted} from "../ui/Buttons";
@@ -86,6 +90,10 @@ export default function PetBnB( { accent, accentMuted, accentBorder }) {
       <PetBnBPersona accent={accent} accentBorder={accentBorder} />
       <PetBnBScenarios accent={accent} accentBorder={accentBorder} />
       <PetBnBPrototype accent={accent} accentBorder={accentBorder} />
+      <PetBnBPersonasV2 accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
+      <PetBnBStudy accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
+      <PetBnBChanges accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
+      <PetBnBPrototypeV2 accent={accent} accentBorder={accentBorder} accentMuted={accentMuted} />
       </div>
     </>
   );
